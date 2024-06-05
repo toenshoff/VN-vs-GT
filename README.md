@@ -1,4 +1,5 @@
-# Distinguished In Uniform: Self Attention Vs. Virtual Nodes (https://arxiv.org/abs/2405.11951)
+## Distinguished In Uniform: Self Attention Vs. Virtual Nodes (https://arxiv.org/abs/2405.11951)
+
 Based on the GPS codebase: https://github.com/rampasek/GraphGPS
 
 ### Python environment setup with Conda
@@ -24,7 +25,7 @@ conda clean --all
 ```
 
 
-### Running Training
+### Run Experiments on Synthetic Data
 ```bash
 conda activate graphgps
 bash experiment_cor44.sh
