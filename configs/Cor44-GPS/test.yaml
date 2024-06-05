@@ -1,10 +1,10 @@
-out_dir: results/ER-GPS-Graph
+out_dir: results/Cor44-GPS
 metric_best: loss
 wandb:
   use: False
   project: ER  # W&B project for debugging runs.
 dataset:
-  format: PyG-ER10
+  format: PyG-Cor44-10
   name: subset
   task: graph
   task_type: regression
@@ -18,7 +18,7 @@ dataset:
   edge_encoder_num_types: 1
   edge_encoder_bn: False
 pretrained:
-  dir: results/ER-GPS/train
+  dir: results/Cor44-GPS/train
   reset_prediction_head: False
 train:
   mode: inference-only

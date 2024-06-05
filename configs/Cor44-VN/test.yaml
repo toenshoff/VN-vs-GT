@@ -1,10 +1,10 @@
-out_dir: results/ER-VN
+out_dir: results/Cor44-VN
 metric_best: loss
 wandb:
   use: True
   project: ER
 dataset:
-  format: PyG-ER10
+  format: PyG-Cor44-10
   name: subset
   task: graph
   task_type: regression
@@ -31,7 +31,7 @@ train:
   mode: inference-only
   batch_size: 10
 pretrained:
-  dir: results/ER-VN/train
+  dir: results/Cor44-VN/train
   reset_prediction_head: False
 model:
   type: custom_gnn

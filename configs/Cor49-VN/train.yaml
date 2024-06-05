@@ -1,11 +1,11 @@
-out_dir: results/LR-VN-D256-3L-Leaky
+out_dir: results/Cor49-VN
 metric_best: loss
 metric_agg: argmin
 wandb:
   use: True
-  project: ER
+  project: Cor49
 dataset:
-  format: PyG-LRTrain
+  format: PyG-Cor49Train
   name: subset
   task: graph
   task_type: regression

@@ -1,10 +1,10 @@
-out_dir: results/LR-VN-D256-3L-Leaky
+out_dir: results/Cor49-VN
 metric_best: loss
 wandb:
   use: True
-  project: ER
+  project: Cor49
 dataset:
-  format: PyG-LRTrain
+  format: PyG-Cor49-10-10
   name: subset
   task: graph
   task_type: regression
@@ -31,7 +31,7 @@ train:
   mode: inference-only
   batch_size: 10
 pretrained:
-  dir: results/LR-VN-D256-3L-Leaky/train
+  dir: results/Cor49-VN/train
   reset_prediction_head: False
 model:
   type: custom_gnn

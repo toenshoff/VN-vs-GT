@@ -1,11 +1,11 @@
-out_dir: results/ER-VN
+out_dir: results/Cor44-VN
 metric_best: loss
 metric_agg: argmin
 wandb:
   use: True
-  project: ER
+  project: Cor44
 dataset:
-  format: PyG-ERTrain
+  format: PyG-Cor44Train
   name: subset
   task: graph
   task_type: regression

@@ -1,10 +1,10 @@
-out_dir: results/LR-GPS
+out_dir: results/Cor49-GPS
 metric_best: loss
 wandb:
   use: True
   project: ER
 dataset:
-  format: PyG-LRTrain
+  format: PyG-Cor49Train
   name: subset
   task: graph
   task_type: regression
@@ -31,7 +31,7 @@ train:
   mode: inference-only
   batch_size: 1
 pretrained:
-  dir: results/LR-GPS-D256-L3-Leaky/train
+  dir: results/Cor49-GPS/train
   reset_prediction_head: False
 model:
   type: GPSModel
